@@ -1,1 +1,1 @@
-
+This project demonstrates a scrolling text display on an alphanumeric LCD using the ATmega16A microcontroller. The text moves across the screen, simulating a marquee effect. The project utilizes CodeWizardAVR for configuration and the avr-libc library for LCD handling.
