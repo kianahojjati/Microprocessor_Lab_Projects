@@ -1,1 +1,28 @@
+/*
+ * sevenseg.c
+ *
+ * Created: 8/14/2023 9:14:06 AM
+ * Author: Thinkpad
+ */
 
+#include <io.h>
+#include <mega16a.h>
+#include <delay.h>
+unsigned int i;
+unsigned char sevseg[10] = {0x01,0x4f,0x12,0x06,0x4c,0x29,0x20,0x0f,0x00,0x04};
+void main(void)
+{
+DDRD |= 0b01111111  ;
+
+
+while (1)
+    {
+    
+    // Please write your application code here
+    for(i=0;i<10;i++)
+    {
+    PORTD = sevseg[i];
+    delay_ms(100);
+    }
+    }
+}
